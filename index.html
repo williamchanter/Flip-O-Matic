@@ -41,13 +41,6 @@
         })();
 
     </script>
-    <!-- Unhide this to make it snow, best to use between 1/12 and 30/1 I think?
-    <script type="text/javascript" src="jscript/snowstorm.js"></script>
-    <script type="text/javascript">
-    snowStorm.flakesMaxActive = 200;
-    snowStorm.snowColor = '#ffffff'; // blue-ish snow!?
-    </script>
-    -->
 </head>
 <body>
 <div id="fb-root"></div>
@@ -66,8 +59,8 @@
 <div align="center">
 
     <div class="info">
-        <span style="font-size:80px; font-family:'nixie one'; color:#000; text-shadow: 0px 2px 6px #666;">FLIP-<span
-                style="color:#E8E8E8; text-shadow: 0px 2px 6px #E8E8E8;">O</span>-MATIC</span><br/><br/>
+        <span style="font-size:80px; font-family:'nixie one',serif; color:#000; text-shadow: 0 2px 6px #666;">FLIP-<span
+                style="color:#E8E8E8; text-shadow: 0 2px 6px #E8E8E8;">O</span>-MATIC</span><br/><br/>
         <span style="font-size:20px;">Want to write text upside down?</span>
         <br/><br/>
         Type in your text and push the "Flip Text" Button. To see it's Awesomeness!
@@ -76,7 +69,7 @@
     </div>
     <br/>
 
-    <form name="f" id="f">
+    <form name="f" id="f" action="">
         <textarea title="Flip the text" onKeyUp="flip()" placeholder="INPUT" class="input" rows="5" cols="50"
                   name="original" style="width:500px;height:120px;"></textarea>
         <br>
@@ -84,7 +77,7 @@
         <input class="flip" type="button" value="FlipText" title="Flip Text" onClick="flip()"><span
             style="color:#E8E8E8">MOV</span><input class="reset" type="reset" value="V" title="Refresh/Clear"><span
             style="color:#E8E8E8">..</span><input class="reset" type="button" value="D"
-                                                  onClick="javascript:this.form.flipped.focus();this.form.flipped.select();"
+                                                  onClick="this.form.flipped.focus();this.form.flipped.select();"
                                                   title="Select All">
         <br/>
         <br/>
@@ -93,21 +86,20 @@
                   style="width:600px;height:140px;z-index:10;"></textarea>
 
     </form>
-    <img class="like" src="img/like.gif" width="100" height="100">
+    <img class="like" src="img/like.gif" width="100" height="100" alt="like">
 
     <div class="face">
         <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FFlip-O-Matic%2F193694334095845&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21"
-                scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;"
-                allowTransparency="true"></iframe>
+                scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;"></iframe>
     </div>
     <div class="me">Made by William Chanter at <a class="link" href="http://williamchanter.co.uk">William Chanter
         Designs</a> - Sorry, but this is not great in Internet Explorer, it's optimised for chrome!
     </div>
-    <a href="http://flip-o-matic.net" name="Flip-O-Matic" draggable="auto" title="Flip-O-Matic"><img class="rob"
-                                                                                                     src="img/rob.png"
-                                                                                                     width="450"
-                                                                                                     height="443"
-                                                                                                     title="Flip-O-Matic"></a>
+    <a href="http://flip-o-matic.net" name="Flip-O-Matic" title="Flip-O-Matic"><img class="rob"
+                                                                                    src="img/rob.png"
+                                                                                    width="450"
+                                                                                    height="443"
+                                                                                    title="Flip-O-Matic" alt="logo"></a>
 </div>
 <div class="chrome">Install the free <strong><a class="link"
                                                 href="http://chrome.google.com/webstore/detail/jcoioagebalnbpmmkkmeoijhfepfkied">Chrome
